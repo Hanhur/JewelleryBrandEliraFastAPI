@@ -1,0 +1,26 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{ static('css/home.css') }}" />
+{% endblock %} 
+
+{% block title %}ELIRA{% endblock title %} 
+
+{% block content %}
+    <section class="inner">
+        <div class="container">
+            <div class="content">
+                <img class="content_img" src="{{static('images/header-img-1.png')}}" alt="">
+                <img class="content_img" src="{{static('images/header-img-2.png')}}" alt="">
+                <div class="content-box">
+                    <h1 class="content-title">E L I R A</h1>
+                    <p class="content-text">We add elegance to your freedom</p>
+                    <button class="content-box-btn" type="button">
+                        Shop Now
+                        <img src="{{static('images/bag.svg')}}" alt="" width="30">
+                    </button>
+                </div>
+            </div>
+        </div>
+    <section/>
+{% endblock content %}
