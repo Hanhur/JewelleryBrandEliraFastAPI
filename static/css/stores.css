@@ -1,0 +1,40 @@
+.make
+{
+    background-color: var(--color-White-2);
+    padding: 64px 45px 83px;
+}
+.header-content
+{
+    border-bottom: 3px solid var(--color-White-3);
+}
+.make-title
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 48px;
+    font-weight: 400;
+    width: 515px;
+    color: rgba(0, 0, 0, 80%);
+    margin-bottom: 64px;
+}
+.make-box
+{
+    display: flex;
+    margin-bottom: 45px;
+}
+.make-img-1
+{
+    width: 755px;
+    height: 466px;
+}
+.make-img-2
+{
+    width: 560px;
+    height: 466px;
+}
+.make-text
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 70%);
+}

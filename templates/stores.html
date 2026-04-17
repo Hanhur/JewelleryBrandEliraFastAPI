@@ -1,0 +1,23 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/stores.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="main">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="make">
+                <h2 class="make-title">Make Your Own Jewellery</h2>
+                <div class="make-box">
+                    <img class="make-img-1" src="{{static('images/make-img-1.png')}}" alt="">
+                    <img class="make-img-2" src="{{static('images/make-img-2.png')}}" alt="">
+                </div>
+                <p class="make-text">Watch one of our happy customers flaunt their new  custom made jewellery</p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

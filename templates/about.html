@@ -1,0 +1,31 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/about.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="section-about">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="inner">
+                <div class="block">
+                    <h2 class="block-title">Ethnically Handcrafted Jewellery</h2>
+                    <h3 class="block_title">Fair Price</h3>
+                    <p class="block-text">
+                        Say goodbye to traditional 10x markups. We design fine jewelry that you can wear every single day.
+                    </p>
+                    <h3 class="block_title">High Quality</h3>
+                    <p class="block-text">
+                        We work with expert jewelers who use high-quality and enduring materials, from precious metals—such as recycled and responsibly mined gold—to ethically sourced diamonds and AAA-grade gemstones.
+                    </p>
+                    <button class="block-btn" type="button">Read More</button>
+                </div>
+                <img class="block-img" src="{{ static('images/main-img.png') }}" alt="">
+                <span class="block-span">See More</span>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Actor&family=Alex+Brush&family=Gentium+Book+Plus&family=Rajdhani&family=Rosario:ital,wght@0,300;1,300&family=Source+Sans+3:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ static('css/normalize.css') }}">
-    <link rel="stylesheet" href="{{ static('css/reset.css') }}">
-    <link rel="stylesheet" href="{{ static('css/style.css') }}">
+    <link rel="stylesheet" href="{{static('css/normalize.css')}}">
+    <link rel="stylesheet" href="{{static('css/reset.css')}}">
+    <link rel="stylesheet" href="{{static('css/style.css')}}">
     {% block css_files %}{% endblock %}
     <title>{% block title %}{% endblock %}</title>
-    <!-- Jewellery Brand Elira FastAPI -->
 </head>
 <body>
     <header class="header">
@@ -17,24 +16,24 @@
              <nav class="nav">
                 <ul class="header-list">
                     <li class="header-item">
-                        <a href="" class="header-link">Home</a>
+                        <a href="{{url_for('home')}}" class="header-link">Home</a>
                     </li>
                     <li class="header-item">
-                        <a href="" class="header-link">About</a>
+                        <a href="{{url_for('about')}}" class="header-link">About</a>
                     </li>
                     <li class="header-item">
-                        <a href="" class="header-link">Gift Coupons</a>
+                        <a href="{{url_for('coupons')}}" class="header-link">Gift Coupons</a>
                     </li>
                     <li class="header-item">
-                        <a href="" class="header-link">Stores</a>
+                        <a href="{{url_for('stores')}}" class="header-link">Stores</a>
                     </li>
                 </ul>
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Connect</a>
+                        <a href="{{url_for('connect')}}" class="nav-link">Connect</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Sign In</a>
+                        <a href="{{url_for('sign')}}" class="nav-link">Sign In</a>
                     </li>
                 </ul>
             </nav>

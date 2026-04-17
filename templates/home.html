@@ -1,13 +1,13 @@
 {% extends "base.html" %} 
 
 {% block css_files %}
-    <link rel="stylesheet" href="{{ static('css/home.css') }}" />
+    <link rel="stylesheet" href="{{static('css/home.css')}}" />
 {% endblock %} 
 
-{% block title %}ELIRA{% endblock title %} 
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
 
 {% block content %}
-    <section class="inner">
+    <section class="section-home">
         <div class="container">
             <div class="content">
                 <img class="content_img" src="{{static('images/header-img-1.png')}}" alt="">
@@ -22,5 +22,5 @@
                 </div>
             </div>
         </div>
-    <section/>
+    </section>
 {% endblock content %}

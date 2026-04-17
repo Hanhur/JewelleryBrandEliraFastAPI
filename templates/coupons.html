@@ -1,0 +1,31 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/coupons.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="section-coupons">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="collection">
+                <div class="collection-content">
+                    <h2 class="collection-title">Dive into our everyday wear collection</h2>
+                    <p class="collection-text">See More</p>
+                </div>
+                <div class="collection-block">
+                    <div class="collection-box">
+                        <img class="collection-img images1" src="{{static('images/collection-img-1.png')}}" alt="">
+                        <span>Earrings</span>
+                    </div>
+                    <div class="collection-box">
+                        <img class="collection-img images2" src="{{static('images/collection-img-2.png')}}" alt="">
+                        <span>Necklaces</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

@@ -1,0 +1,80 @@
+.header-content
+{
+    border-bottom: 3px solid var(--color-White-3);
+}
+.arrivals-block
+{
+    background-color: var(--color-White-2);
+    padding: 64px 90px 110px;
+}
+.arrivals-box
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 64px;
+}
+.arrivals-title
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 80%);
+}
+.arrivals-text
+{
+    font-family: "Rosario", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 80%);
+}
+.arrivals-box-img
+{
+    display: flex;
+    margin-bottom: 45px;
+    position: relative;
+}
+.arrivals-img-1
+{
+    width: 705px;
+    height: 440px;
+}
+.arrivals-img-2
+{
+    width: 523px;
+    height: 440px;
+}
+.arrivals_text
+{
+
+    font-family: "Gentium Book Plus", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 70%);
+}
+.hoops
+{
+    content: '';
+    position: absolute;
+    right: 230px;
+    bottom: 140px;
+}
+.hoops-title
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--color-White);
+    margin-bottom: 15px;
+    width: 285px;
+}
+.hoops-btn
+{
+    font-family: "Rosario", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--color-White);
+    background-color: rgba(199, 159, 73, 0.5);
+    box-shadow: 1px 5px 33px rgb(94, 64, 30);
+    padding: 7px 35px;
+}

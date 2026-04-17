@@ -1,0 +1,57 @@
+.collection
+{
+    background-color: var(--color-White-2);
+    padding: 64px 61px 40px 80px;
+}
+.header-content
+{
+    border-bottom: 3px solid var(--color-White-3);
+}
+.collection-content
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 88px;
+}
+.collection-title
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 48px;
+    font-weight: 400;
+    width: 780px;
+    color: rgba(0, 0, 0, 80%);
+}
+.collection-text
+{
+    font-family: "Rosario", sans-serif;
+    font-size: 30px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 80%);
+}
+.collection-block
+{
+    display: flex;
+    gap: 0 75px;
+}
+.collection-img
+{
+    width: 587px;
+    height: 470px;
+    margin-bottom: 50px;
+}
+.images1
+{
+    box-shadow: 20px -20px #C1ADA5;
+}
+.images2
+{
+    box-shadow: 20px -20px #E7E8E3;
+}
+.collection-box span 
+{
+    font-family: "Rosario", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    color: rgba(0, 0, 0, 80%);
+}

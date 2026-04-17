@@ -1,0 +1,30 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/connect.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="main">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="arrivals-block">
+                <div class="arrivals-box">
+                    <h2 class="arrivals-title">Exolore New Arrivals</h2>
+                    <p class="arrivals-text">See More</p>
+                </div>
+                <div class="arrivals-box-img">
+                    <img class="arrivals-img-1" src="{{static('images/arrivals-img-1.png')}}" alt="">
+                    <img class="arrivals-img-2" src="{{static('images/arrivals-img-2.png')}}" alt="">
+                    <div class="hoops">
+                        <h3 class="hoops-title">Perfect Hoops</h3>
+                        <button class="hoops-btn" type="button">Buy Now</button>
+                    </div>
+                </div>
+                <p class="arrivals_text">Simple thick small/medium sized gold hoops for everyday wear</p>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

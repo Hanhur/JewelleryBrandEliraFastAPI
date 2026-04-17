@@ -1,0 +1,118 @@
+.header-content
+{
+    border-bottom: 3px solid var(--color-White-3);
+}
+.footer-box
+{
+    background-color: var(--color-White-2);
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 43px 45px 16px;
+}
+.footer-text
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-Black);
+    width: 700px;
+}
+.footer-block
+{
+    background-color: var(--color-Gray);
+    padding: 21px 40px 78px 26px;
+}
+.footer-title
+{
+    font-family: "Rajdhani", sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: var(--color-White-2);
+    margin-bottom: 32px;
+}
+.title
+{
+    width: 460px;
+}
+.block-content
+{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    gap: 0 110px;
+}
+.content_title
+{
+    font-family: "Gentium Book Plus", serif;
+    font-size: 36px;
+    font-weight: 400;
+    color: var(--color-White-2);
+    margin-bottom: 25px;
+}
+.content_list
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    font-family: "Source Sans 3", sans-serif; 
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-White-2);
+    width: 215px;
+}
+.content-input
+{
+    width: 530px;
+    padding: 8px 15px;
+}
+.content-input::placeholder
+{
+    font-family: "Source Sans 3", sans-serif; 
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-White-3);
+}
+.content-img
+{
+    display: flex;
+    width: 53px;
+    height: 53px;
+}
+.conditions
+{
+    display: flex;
+    align-items: center;
+    gap: 0 55px;
+    padding: 20px 45px;
+    background-color: var(--color-Black-2);
+}
+.conditions-text
+{
+    font-family: "Source Sans 3", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-White);
+}
+.conditions-box
+{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+    margin-left: 660px;
+}
+.conditions-btn
+{
+    font-family: "Source Sans 3", sans-serif; 
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--color-White);
+    background-color: var(--color-Black);
+    display: flex;
+    align-items: center;
+    gap: 0 6px;
+    padding: 5px 6px;
+}
+.conditions-img
+{
+    width: 16px;
+}

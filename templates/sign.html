@@ -1,0 +1,103 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/sign.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="footer">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="footer-box">
+                <p class="footer-text">
+                    “The brand justifies its name. Freedom with elegance, 
+                    something that every woman deserves.”
+                </p>
+                <img class="footer-img" src="{{static('images/forbes.png')}}" alt="">
+                <img class="footer-img" src="{{static('images/elle.png')}}" alt="">
+                <img class="footer-img" src="{{static('images/vogue.png')}}" alt="">
+            </div>
+            <div class="footer-block">
+                <h2 class="footer-title">E L I R A</h2>
+                <div class="block-content">
+                    <div class="content_box">
+                        <h3 class="content_title">Support</h3>
+                        <ul class="content_list">
+                            <li class="content_item">
+                                <a href="#" class="content_link">FAQ</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">Virtual shopping</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">Shipping and Returns</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">Ring sizer</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content_box">
+                        <h3 class="content_title">Company</h3>
+                        <ul class="content_list">
+                            <li class="content_item">
+                                <a href="{{url_for('about')}}" class="content_link">About Us</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="{{url_for('stores')}}" class="content_link">Stores</a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">What’s new?</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content_box">
+                        <h3 class="content_title title">Get notified upon new arrivals</h3>
+                        <input class="content-input" type="text" placeholder="Your Email-Id Here">
+                    </div>
+                    <div class="content_box">
+                        <ul class="content_list">
+                            <li class="content_item">
+                                <a href="#" class="content_link">
+                                    <img class="content-img" src="{{static('images/pinterest.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">
+                                    <img class="content-img" src="{{static('images/instagram.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">
+                                    <img class="content-img" src="{{static('images/facebook.png')}}" alt="">
+                                </a>
+                            </li>
+                            <li class="content_item">
+                                <a href="#" class="content_link">
+                                    <img class="content-img" src="{{static('images/twitter.png')}}" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="conditions">
+                <p class="conditions-text">Terms and conditions</p>
+                <p class="conditions-text">Privacy Policiy</p>
+                <p class="conditions-text">@2021 Elira Inc</p>
+                <div class="conditions-box">
+                    <p class="conditions-text">Lang</p>
+                    <button class="conditions-btn" type="button">
+                        USA
+                        <img class="conditions-img" src="{{static('images/chevron.svg')}}" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock content %}
