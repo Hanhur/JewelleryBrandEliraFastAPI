@@ -1,0 +1,29 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/contact.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira FastAPI{% endblock title %} 
+
+{% block content %}
+    <section class="contact">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="contact-block">
+                <h2 class="contact-title">Contact Us</h2>
+                <p class="contact-text">Say Hello send us your thoughts about our products or share your ideas with our Team!</p>
+                <form class="contact-form">
+                    <div class="contact-box">
+                        <input class="contact-input" type="text" placeholder="First name">
+                        <input class="contact-input" type="text" placeholder="Last name">
+                        <input class="contact-input" type="text" placeholder="Phone">
+                        <input class="contact-input" type="text" placeholder="Email">
+                    </div>
+                    <textarea class="contact_text" placeholder="Message"></textarea>
+                </form>
+                <button class="contact-btn" type="submit">SEND</button>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

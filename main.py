@@ -31,11 +31,17 @@ def connect():
     """Страница Connect"""
     return render_template('connect.html', page = 'connect')
 
+
 @app.route('/sign')
 def sign():
     """Страница Sign In"""
     return render_template('sign.html', page = 'sign')
 
+
+@app.route('/contact')
+def contact():
+    """Страница Contact"""
+    return render_template('contact.html', page = 'contact')
 
 
 if __name__ == '__main__':
