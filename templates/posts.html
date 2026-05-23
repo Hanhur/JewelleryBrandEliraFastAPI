@@ -1,0 +1,47 @@
+{% extends "base.html" %} 
+
+{% block css_files %}
+    <link rel="stylesheet" href="{{static('css/posts.css')}}" />
+{% endblock css_files %} 
+
+{% block title %}Jewellery Brand Elira{% endblock title %} 
+
+{% block content %}
+    <section class="posts">
+        <div class="container">
+            <div class="header-content"></div>
+            <div class="posts-block">
+                <h1>Все сообщения</h1>
+                {% if posts %}
+                    {% for post in posts %}
+                        <div class="post">
+                            {% if post.first_name or post.last_name %}
+                                <h2 class="post-title">{{ post.first_name }} {{ post.last_name }}</h2>
+                            {% else %}
+                                <h2 class="post-title">Анонимное сообщение</h2>
+                            {% endif %}
+                            <div class="post-info">
+                                <strong>Email:</strong> {{ post.email }} | 
+                                <strong>Телефон:</strong> {{ post.phone }} | 
+                                <strong>Дата:</strong> {{ post.date.strftime('%d.%m.%Y %H:%M') if post.date else 'Дата не указана' }}
+                            </div>
+                            <div class="post-text">
+                                <strong>Сообщение:</strong>
+                                <p>{{ post.text }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="no-posts">
+                        <p>Пока нет ни одного сообщения.</p>
+                        <p>Станьте первым, кто отправит сообщение!</p>
+                    </div>
+                {% endif %}
+                
+                <a href="/contact" class="back-link">← Написать новое сообщение</a>
+                <br>
+                <a href="/" class="back-link">← На главную</a>
+            </div>
+        </div>
+    </section>
+{% endblock content %}

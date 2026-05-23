@@ -13,16 +13,16 @@
             <div class="contact-block">
                 <h2 class="contact-title">Contact Us</h2>
                 <p class="contact-text">Say Hello send us your thoughts about our products or share your ideas with our Team!</p>
-                <form class="contact-form">
+                <form class="contact-form" method="POST" action="/contact">
                     <div class="contact-box">
-                        <input class="contact-input" type="text" placeholder="First name">
-                        <input class="contact-input" type="text" placeholder="Last name">
-                        <input class="contact-input" type="text" placeholder="Phone">
-                        <input class="contact-input" type="text" placeholder="Email">
+                        <input class="contact-input" type="text" name="first_name" placeholder="First name" required>
+                        <input class="contact-input" type="text" name="last_name" placeholder="Last name" required>
+                        <input class="contact-input" type="tel" name="number" placeholder="Phone" required>
+                        <input class="contact-input" type="email" name="email" placeholder="Email" required>
                     </div>
-                    <textarea class="contact_text" placeholder="Message"></textarea>
+                    <textarea class="contact_text" name="text" placeholder="Message" required></textarea>
+                    <button class="contact-btn" type="submit">SEND</button>
                 </form>
-                <button class="contact-btn" type="submit">SEND</button>
             </div>
         </div>
     </section>
